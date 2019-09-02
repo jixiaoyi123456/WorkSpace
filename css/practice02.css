@@ -1,0 +1,22 @@
+/*链接登录的颜色为红色，同时主导航栏里面的所有连接改为蓝色*/
+.site-r a{
+    color: red;
+}
+.nav ul li a{
+    color: blue;
+}
+/*主导航栏和测导航栏里面的文字都是14像素，并且都是微软雅黑*/
+.nav, .sitenav{
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+/*主导航栏里面的一级菜单链接文字颜色为绿色*/
+.nav > ul li a{
+    color: green;
+}
+a[title]{
+    font-style: italic;
+}
+div::selection{
+    color: pink;
+}

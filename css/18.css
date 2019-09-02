@@ -1,0 +1,14 @@
+div{
+    font:700 80px '微软雅黑';
+    color: #cccccc;
+}
+body{
+    background-color: #cccccc;
+}
+div:first-child{
+    /*水平位置 垂直位置 模糊距离 阴影颜色*/
+    text-shadow: 1px 2px 1px #000, -1px -2px 1px #fff;
+}
+div:last-child{
+    text-shadow: 1px 2px 1px #fff, -1px -2px 1px #000;
+}

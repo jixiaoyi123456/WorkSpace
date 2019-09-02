@@ -1,0 +1,41 @@
+.one{
+    height: 200px;
+    width: 200px;
+    border: solid 1px pink;
+    border-radius: 10px 50px 90px;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    border: skyblue 2px solid;
+    border-radius: 50%;
+}
+.three{
+    height: 100px;
+    width: 100px;
+    border-top: orangered 2px solid;
+    border-bottom: orangered 2px solid;
+    border-left: green 2px solid;
+    border-right: green 2px solid;
+    border-radius: 10px 40px;
+}
+table{
+    border: blueviolet 1px solid;
+    border-collapse: collapse;
+
+}
+td{
+    border: lightcoral 1px solid;
+    /*border-radius: 20%;*/
+}
+.four{
+    height: 200px;
+    width: 200px;
+    border: chartreuse 1px dashed;
+    /*padding: 10px ; 上下左右*/
+    /*padding: 10px 20px; 上下 左右*/
+    /*padding: 10px 20px 30px; 上 左右 下*/
+    /*padding: 10px 20px 30px 40px; 上 右 下 左*/
+    /*padding-left: 20px;*/
+    /*padding-right: 40px;*/
+}

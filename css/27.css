@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div{
+    width: 360px;
+    height: 270px;
+    margin: 50px auto;
+    position: relative;
+}
+.arrow-l,
+.arrow-r{
+    width: 64px;
+    height: 64px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+}
+.arrow-l{
+    left: 0px;
+
+}
+.arrow-r{
+    right: 0px;
+
+}
+.circle{
+    width: 65px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    list-style: none;
+    position: absolute;
+    bottom: 15px;
+    left: 180px;
+    margin-left: -32px;
+
+}
+.circle li{
+    height: 9px;
+    width: 9px;
+    background-color: #b7b7b7;
+    border-radius: 50%;
+    margin: 2px 2px;
+/*   让多行元素能够在一行上显示，用float浮动的方法 */
+    float: left;
+}
+/*设计到权重的知识点
+当我们只写.current时，这里是类选择器，其权重为0010
+而上面的 .circle li，是类选择器和标签选择器，其权重为0011
+由此可见上面的权重更高，因此上面的灰色会覆盖下面设置的橙色
+此时我们通过调节权重的大小，来实现功能
+*/
+.circle .current{
+    background-color: #ff4400;
+}

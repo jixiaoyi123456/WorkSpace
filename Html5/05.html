@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" id="myForm">
+<!--    placeholder:提示文本，提示占位-->
+<!--    autofocus自动的获取焦点-->
+<!--    autocomplete:自动完成；on:打开， off：关闭
+        两个前提：
+            1. 必须成功提交过,提交才会有记录
+            2. 当前添加的autocomplete必需有name属性
+-->
+    用户名：<input type="text" placeholder="请输入用户名" name="username" autofocus autocomplete="on"><br>
+<!--    tel并不会实现验证，仅仅实在移动端能够弹出数字键盘-->
+<!--    required：必须输入，如果没有输入会组织当前数据提交-->
+<!--    pattern：正则表达式验证
+        *：代表任意和
+        ？：代表一个或者0个
+        + ：代表一个或者多个-->
+    手机号：<input type="tel" name="usrnumber"  required pattern="^(\+86)?1\d{10}$"><br>
+<!--    file:从本地中选择一个文件
+        multiple:从本地中选择多个文件-->
+    文件： <input type="file" name="photoFile" multiple><br>
+<!--    email:可以通过添加multiple来实现可以输入多个邮箱地址，必须要以逗号分隔-->
+    邮箱：<input type="email" name="email"  multiple><br>
+<!--  提交-->
+    <input type="submit" value="提交"><br>
+</form>
+<!--下面这个表单元素并没有包含在form中，默认情况下面表单元素的数据不会进行提交-->
+<!--form:指定表单id,那么在将来指定id号的表单进行数据提交的时候，也会将当前表单元素的数据一起提交-->
+地址：<input type="text" name="address" form="myForm">
+</body>
+</html>

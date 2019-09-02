@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+<!--    专业：<select name="" id="">-->
+<!--    <option value="1">前端与移动开发</option>-->
+<!--    <option value="2">java</option>-->
+<!--    <option value="3">JavaScript</option>-->
+<!--    <option value="4">C++</option>-->
+<!--</select>-->
+<!--    为了实现不仅可以选择，还可以实现输入的功能引入了datalist
+        但是datalist不支持火狐浏览器-->
+<!--    需要建立输入框和datalist之间的联系，才可以将两部分关联起来，
+        采用的方式 input中使用属性list=‘datalist的id号’-->
+    专业：<input type="text" list="subject">
+<!--    通过datalist建立选项表-->
+    <datalist id="subject">
+<!--        创建选项值，value：具体的值，label：辅助值-->
+        <option value="前端与移动开发" label="前景非常好"></option>
+        <option value="java" label="使用者多"></option>
+        <option value="JavaScript" label="做特效"></option>
+        <option value="C" label="不知道"></option>
+    </datalist>
+    网址：<input type="url" list="urls">
+<!--    如果input输入框的type类型是URL，那么value值必须添加http://-->
+    <datalist id="urls">
+        <option value="http://www.baidu.com"></option>
+        <option value="http://www.biying.com"></option>
+    </datalist>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.funSearch{
+    height: 294px;
+    width: 238px;
+    border: 1px #D9EDEE solid ;
+    border-top: 3px #ff8400 solid;
+    margin: 100px 0 0 100px;
+}
+.funSearch h3{
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: 1px #D9EDEE solid;
+    padding-left: 12px;
+}
+.funSearch img{
+    width: 135px;
+    height: 135px;
+    margin: 7px 0 0 8px;
+}
+.funSearch ul{
+    list-style: none;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.funSearch ul li{
+    padding-left: 10px;
+    height: 26px;
+    line-height: 26px;
+    background: url("../image/06.jpg") no-repeat left center;
+    background-size: 5px 5px;
+}
+
+.funSearch ul li a{
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+.funSearch ul li a:hover{
+    color: orangered;
+    text-decoration: underline;
+}

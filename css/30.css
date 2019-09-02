@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+div:first-child{
+    z-index: 1;
+}
+div:nth-child(2){
+    background-color: lightblue;
+    z-index: 2;
+}
+div:last-child{
+    background-color: lawngreen;
+    z-index: 3;
+}

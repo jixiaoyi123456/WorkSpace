@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.first-div{
+    width: 100%;
+    border: none;
+    border: 1px solid #cccccc ;
+    align-content: center;
+}
+#logo-image{
+    height: 16px;
+    padding-left:50px;
+}
+#logo-home{
+    padding-left: 400px;
+}
+#account:hover{
+    color: chocolate;
+}
+#right-content > h1{
+    font-size: 16px;
+}
+#image02{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+#detail{
+    margin-top: 5px;
+}
+#detail02{
+    margin-top: -38px;
+    padding-left: 40px;
+    font-size: 12px;
+}
+article {
+    padding-left: 100px;
+    font-size: 12px;
+    width: 577px;
+    float: left;
+    padding-right: 25px;
+}
+aisde{
+    padding-left: 25px;
+    padding-right: 100px;
+    font-size: 10px;
+    width: 577px;
+    letter-spacing: -1px;
+    line-height: 1px;
+    /*float: right;*/
+}
+#image03{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}

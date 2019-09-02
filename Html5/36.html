@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/36.css">
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>学生档案</legend>
+        <label for="Stu_name">姓名:</label>
+        <input type="text" id="Stu_name" name="Stu_name" autofocus placeholder="请输入">
+        <label for="Stu_tel">手机号码：</label>
+        <input type="tel" id="Stu_tel" name="Stu_tel" pattern="^1\d{10}$">
+        <label for="Stu_email">邮箱地址：</label>
+        <input type="email" id="Stu_email" name="Stu_email" required>
+<!--        label和input之间使用id来建立关系的
+            input和datalist之间是使用list来建立关系的-->
+        <label for="Stu_school">所属学院：</label>
+        <input type="text" id="Stu_school" list="Stu_list" placeholder="请输入">
+        <datalist id="Stu_list" >
+            <option value="计算机学院"></option>
+            <option value="软件学院"></option>
+            <option value="数字媒体学院"></option>
+        </datalist>
+        <label for="Stu_score">入学成绩：</label>
+        <input type="number" min="0" max="100" id="Stu_score">
+        <label for="Stu_basic">基础水平：</label>
+        <meter id="Stu_basic" low="60" high="90" min="0" max="100"></meter>
+        <label for="Stu_inDate">入学日期：</label>
+        <input type="date" id="Stu_inDate" name="Stu_inDate">
+        <label for="Stu_outDate">毕业日期：</label>
+        <input type="date" id="Stu_outDate" name="Stu_inDate">
+        <input type="submit" value="提交">
+    </fieldset>
+</form>
+<script>
+    document.getElementById('Stu_score').oninput = function () {
+        document.getElementById('Stu_basic').value = this.value;
+    }
+</script>
+</body>
+</html>

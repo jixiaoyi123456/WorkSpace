@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+textarea{
+
+    outline: none;
+    width: 110px;
+    height: 100px;
+}

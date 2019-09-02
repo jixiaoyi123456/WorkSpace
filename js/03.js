@@ -1,0 +1,12 @@
+// JavaScript 语句
+// JavaScript 数字
+// JavaScript 字符串
+// JavaScript 变量
+// JavaScript 运算符
+// JavaScript 赋值
+// JavaScript 表达式（使用常量）
+// JavaScript 表达式（使用字符串）
+// JavaScript 表达式（使用变量）
+// JavaScript 关键词
+// JavaScript 注释
+// JavaScript 对大小写敏感

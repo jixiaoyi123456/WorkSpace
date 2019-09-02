@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 540px;
+}
+header img{
+    width: 100%;
+    height: 100px;
+}
+nav{
+    /*整个形状需要一个外边距
+     但是如果是在子盒子里面通过添加margin来实现的话，
+     会造成溢出的效果
+     所以通过考虑，通过外盒子的内边距来实现这个效果，
+     可以避免溢出的效果*/
+    padding: 5px;
+}
+nav .row{
+    height: 90px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 5px;
+}
+nav .row:nth-child(2) .subrow{
+    background-color: #3d98ff;
+}
+nav .row:nth-child(3) .subrow{
+    background-color: #44c522;
+}
+nav .row:nth-child(4) .subrow{
+    background-color: #fc9720;
+}
+nav .subrow{
+    flex: 1;
+    background-color: #Ff697a;
+}
+nav .info {
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+}
+nav .info a{
+    text-decoration: none;
+    font-size: 16px;
+    /*给了行高不用给高*/
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+nav .info a:first-child{
+    border-bottom: 1px white solid;
+}

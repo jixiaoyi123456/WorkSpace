@@ -1,0 +1,11 @@
+div{
+    width: 900px;
+    height: 400px;
+    background-color: lightpink;
+    background-image: url("../image/01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+    ;
+
+}

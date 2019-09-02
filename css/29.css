@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*fixed一定要给出宽度与高度*/
+.top{
+    width: 100%;
+    height: 49px;
+    background: url("../image/13.png") no-repeat 0 center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.center{
+    width: 700px;
+    height: 1236px;
+    background: url("../image/09.jpeg");
+    margin: 49px auto 0px auto;
+}
+.ad-r,
+.ad-l{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 100px;
+}
+.ad-r{
+    right: 0px;
+}
+.ad-l{
+    left: 0px;
+}

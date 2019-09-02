@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    IE9: 行级元素在设置宽度的时候是失效的
+        IE8：完全不支持语义标签（不支持HTML5），他不认识语义标签，所以无法解析这些标签
+-->
+    <script src="../js/html5shiv.min.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        header{
+            display:block;
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        nav{
+            display:block;
+            width: 100%;
+            height: 36px;
+            background-color: azure;
+        }
+        /*行 级元素在设置宽度的时候是失效的*/
+        main{
+            display:block;
+            width: 100%;
+            height: 500px;
+            background-color: beige;
+        }
+        main > article{
+            width: 80%;
+            height: 100%;
+            background-color: coral;
+            float: left;
+        }
+        main > aside{
+            width: 20%;
+            height: 100%;
+            background-color: rosybrown;
+            float: right;
+        }
+        footer{
+            display:block;
+            width: 100%;
+            height: 20px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<header>头部</header>
+<nav>导航条</nav>
+<main>
+    <article>左边</article>
+    <aside>右边</aside>
+</main>
+<footer>底部</footer>
+</body>
+</html>

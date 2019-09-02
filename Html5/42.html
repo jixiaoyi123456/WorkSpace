@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function handlerLoad(){
+            window.openMySpecialWindow();
+            alert('loaded');
+        }
+        function handlerClick() {
+            alert('clicked')
+        }
+        window.onerror = function (sMessage, sUrl, sLine) {
+            alert('AN ERROR OCCURRED:\n'+sMessage+'\nUrl: '+sUrl+'\nLine number: ' +sLine);
+            return true;
+        }
+    </script>
+</head>
+<body onload="handlerLoad()">
+<input type="button" value="click" onclick="handlerClick()">
+</body>
+</html>

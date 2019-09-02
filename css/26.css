@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.father{
+    width: 800px;
+    height: 400px;
+    background-color: lightpink;
+    margin: 100px auto;
+    position: relative;
+}
+.son{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    /*定位方式采用绝对定位*/
+    position: absolute;
+    /*先走父盒子的一半*/
+    left: 50%;
+/*    在走自己盒子的负一半值*/
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+}

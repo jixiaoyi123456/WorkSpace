@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    width: 100%;
+    height: 40px;
+    background-color: #fff427;
+}
+/*对于行内元素而言，是无法设置宽高的，只能依靠自己的内容进行撑开
+1. 用display:block| inline-block进行转换
+2. 用position：absolute|fixed 或者float：left进行转换*/
+span{
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    position: absolute;
+}

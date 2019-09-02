@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/40.js"></script>
+    <script src="../js/TextUtil.js"></script>
+</head>
+<body>
+<input type="text" size="12" id="txt1" name="txt1">
+<br>
+<br>
+<textarea name="txt2" id="txt2" cols="25" rows="5" onkeypress="return TextUtil.isNotMax(this)"></textarea>
+<br>
+<textarea name="txt2" id="txt3" cols="25" rows="5" onkeypress="return TextUtil.allowChars(this, event)"></textarea>
+<br>
+<input type="button" value="get value" onclick="getValues()">
+<br>
+<input type="button" value="select value" onclick="selectText()">
+<br>
+</body>
+</html>

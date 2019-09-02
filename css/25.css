@@ -1,0 +1,93 @@
+/*初始化*/
+*{
+    margin:0px;
+    padding: 0px;
+}
+.clearfix:after,
+.clerfix:before{
+    display: block;
+    content: '';
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+body{
+    background-color: #f3f5f7;
+}
+input{
+    border: 0;
+    /*CSS的盒子模型*/
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #050505;
+}
+/*页面头部*/
+header{
+    height: 100px;
+    /*解决外边距合并的问题*/
+    overflow: hidden;
+}
+nav{
+    height: 42px;
+    width: 1000px;
+    margin: 29px auto;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 42px;
+}
+
+
+.navbar{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 50px;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul li a{
+    /*不能通过固定边框的宽度来实现，
+    而是需要通过padding来实现
+    因为字数的不相同的*/
+    padding: 0px 10px;
+    display: inline-block;
+    height: 42px;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px #06a4ff solid;
+}
+.search{
+    height: 38px;
+    width: 410px;
+    border: 1px #00a4ff solid;
+    float: left;
+
+}
+.search input[type=text]{
+    width: 360px;
+    height: 38px;
+    background-color: linen;
+    padding-left:20px;
+    float: left;
+
+}
+.search input[type=submit]{
+    width: 50px;
+    height: 38px;
+    background: #00a4ff url('../image/08.jpg') center center no-repeat;
+    background-size: 40px auto;
+    float: left;
+}

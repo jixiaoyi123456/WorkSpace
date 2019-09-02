@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- embed：直接插入视频文件，其本质是调用本机上已经安装的软件，有兼容性-->
+<!-- flash插件：安装flash
+    缺点一：学习flash，成本太高
+    缺点二：苹果设备不支持flash
+    -->
+
+<!-- audio:播放音频
+    controls：音频播放器的控制面板
+    autoplay:自动播放
+    loop:循环播放
+-->
+<!-- video:播放视频
+    controls：音频播放器的控制面板
+    autoplay:自动播放
+    loop:循环播放
+    width:宽度
+    height：高度
+    poster：当视频还没有完全下载，或者用户还没有点击播放前的默认显示的封面。默认显示当前视频文件的第一幅画面
+-->
+<!--注意事项：在设置宽高的时候，一般情况下只会设置宽度或者高度，让其自动等比例缩放，如果同时设着宽度和高度，
+    那么视频不会真正的调整到设置的高度，除非设置的值刚好是等比例的-->
+<audio src="" controls autoplay loop></audio>
+<video src=""></video>
+<!--重点说明source的使用，因为不同的浏览器支持的视频文件的格式不一样。所以在进行视频添加的时候，需要考虑浏览器是否支持，
+    我们可以准备多个格式的视频文件，让浏览器自动的选择-->
+<video controls>
+    <source src="" type="">
+</video>
+</body>
+</html>

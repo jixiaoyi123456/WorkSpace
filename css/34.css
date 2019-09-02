@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+div{
+    width: 270px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: pink;
+
+}
+div ul{
+    list-style: none;
+}
+div ul li{
+
+    width: 90px;
+    height: 100px;
+    /*因为li是块级元素，所以可以设置宽高
+     又因为div的宽度是270，给li分配的宽度是90，
+     再加上一个边框的大小，就超出div的宽度了。
+     所以，需要把边框的大小限制在li的大小里面
+     所以是对li用border-box，而不是div*/
+    box-sizing: border-box;
+    /*因为是li是块级元素，是一行一行堆叠而成的
+     所以造成了行堆叠的效果。为了解决这个情况
+     是为li添加float效果，而不是ul*/
+    float: left;
+    border: 1px skyblue solid;
+}
+section{
+    width: 270px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: pink;
+
+}
+section ul{
+    list-style: none;
+    /*给父盒子添加 display: flex;*/
+    display: flex;
+}
+section ul li{
+    float: left;
+    height: 100px;
+    /*子盒子添加份数*/
+    flex: 1;
+    background-color: purple;
+}
+section ul li:nth-child(2){
+    background-color: skyblue;
+    flex:2;
+    margin: 0px 2px;
+}
+footer{
+    width: 270px;
+    height: 100px;
+    margin: 200px auto;
+    /*有了display: flex;以后，没有添加float的
+     块级元素也能够在一行显示*/
+    display: flex;
+    /*flex-direction: column;*/
+}
+.flex{
+    height: 100%;
+    background-color: pink;
+    flex: 1;
+}
+.flex:nth-child(2){
+    background-color: purple;
+}

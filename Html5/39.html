@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../js/FormUtil.js"></script>
+</head>
+<body onload="FormUtil.focusOnFirst()">
+<form id="form1" action="javascript:alert('Submitted')" onreset="alert('i am resetting')" method="post" >
+<!--    label:用于在后台将标签绑定到特定的表单字段，for属性指向它被绑定的表单的ID
+        所以，form表单字段都应该包含两个属性id和name，并且这两个值相等
+        id：用于在客户端确定元素
+        name：用于将数据提交到服务器
+-->
+<!--    regular textbox-->
+    <label for="txtName">Name:</label><br>
+    <input type="text" id="txtName" name="txtName"><br>
+<!--    password textbox-->
+    <label for="txtPassword">password:</label><br>
+    <input type="password" id="txtPassword" name="txtPassword">
+    <br>
+<!--    age comboxbox-->
+    <label for="selAge"></label><br>
+    <select name="selAge" id="selAge">
+        <option value="">18-21</option>
+        <option value="">22-25</option>
+        <option value="">26-29</option>
+        <option value="">30-35</option>
+        <option value="">over 35</option>
+    </select><br>
+<!--    multiple textbook-->
+    <label for="txtComment"></label><br>
+    <textarea name="txtComment" id="txtComment" cols="30" rows="10"></textarea>
+    <br>
+<!--    submit button-->
+    <input type="submit" value="Submit Form">
+</form>
+<script src="../js/39.js"></script>
+</body>
+</html>

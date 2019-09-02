@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.top{
+    height: 60px;
+    background-color: lightslategrey;
+}
+.banner{
+    height: 400px;
+    width: 960px;
+    background-color: lavender;
+    margin: 10px auto;
+}
+.main{
+    width: 960px;
+    height: 200px;
+    background-color: linen;
+    margin: 0px auto;
+}
+.main ul{
+    list-style: none;
+}
+.main ul li{
+    width: 240px;
+    height: 200px;
+    background-color: lightpink;
+    float: left;
+}
+.main ul li:nth-child(2){
+    background-color: plum;
+}
+.main ul li:nth-child(4){
+    background-color: plum;
+}
+
+.footer{
+    height: 100px;
+    background-color: darkslategrey;
+    margin-top: 10px;
+}
+

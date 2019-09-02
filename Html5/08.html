@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form action="">
+    用户名：<input type="text" name="userName" id="userName"><br>
+    手机号：<input type="tel" pattern="^1\d{10}$" name="userPhone" id="userPhone"><br>
+    <input type="submit" value="提交">
+</form>
+<script>
+    <!--        oninput:监听当前元素内容的改变,只要内容改变(包括内容增加和内容删除),都会触发这个事件-->
+    document.getElementById('userName').oninput = function () {
+        console.log('oninput:'+this.value);
+    };
+    //onkeyup:键盘弹起的时候触发；每一个键的弹起都会触发该事件
+    document.getElementById('userName').onkeyup = function () {
+        console.log('onkeyup:' + this.value);
+    };
+    document.getElementById('userPhone').oninvalid = function () {
+        // console.log('请输入合法的11位手机号码');
+        this.setCustomValidity('请输入合法的11位手机号码');
+    };
+</script>
+</body>
+</html>

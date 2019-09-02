@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*由于父盒子没有高度，所以子盒子浮动时。*/
+/*下面的盒子会挪上来。这就是浮动的影响*/
+/*清除浮动
+方法二：在父盒子处添加属性：overflow：hidden*/
+
+.top{
+    width: 960px;
+    background-color: lightpink;
+    /*overflow: hidden;*/
+}
+/*清除浮动
+方法三：利用after伪元素*/
+/*.top:after{*/
+/*    content: '.';*/
+/*    display: block;*/
+/*    height: 0px;*/
+/*    visibility: hidden;*/
+/*    clear: both;*/
+/*}*/
+/*.top{*/
+/*    *zoom:1;*/
+/*}*/
+
+/*清除浮动：
+  使用before和after双伪元素来清除浮动*/
+.top:after,
+.top:before{
+    content: '';
+    display: table;
+}
+.top:after{
+    clear:both;
+}
+.top{
+    *zoom:1;
+}
+.top .son1{
+    width: 200px;
+    height: 100px;
+    background-color: hotpink;
+    float: left;
+}
+.top .son2{
+    width: 200px;
+    height: 100px;
+    background-color: chocolate;
+    float: left;
+}
+/*清除盒子浮动的影响
+方法一：在子盒子后面添加额外的空盒子。*/
+/*.top .clear{*/
+/*    clear: both;*/
+/*}*/
+.footer{
+    width: 960px;
+    height: 200px;
+    background-color: lavender;
+}

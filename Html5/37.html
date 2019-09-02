@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 能做什么</title>
+    <style>
+        ul li:nth-child(2){
+            background-color: #Ff697a;
+        }
+        ul li:nth-child(3){
+            display: block;
+        }
+        ul li:last-child{
+            display: none;
+        }
+        ul li:last-child button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li id="one">
+        我是HTML的内容
+        <button onclick="change_content()" >点击我</button>
+    </li>
+    <li id="two">
+        我是css的样式
+        <button onclick="change_css()">点击我</button>
+    </li>
+    <li id="three" >
+        我是css中元素的显示
+        <button onclick="hidden_css()">点击我</button>
+    </li>
+    <li id="four" >
+        我是css中元素的隐藏
+        <button onclick="show_css()">点击我</button>
+    </li>
+
+</ul>
+<div>
+    <img src="../image/08.jpg" alt="" id="five">
+    <button onclick="change_attribute()">点击我</button>
+</div>
+
+<script src="../js/01.js"></script>
+</body>
+</html>
